@@ -8,6 +8,7 @@ struct ll_link{
 };
 struct ll_link* ll_newlink(int dat, struct ll_link* nxt){
 	struct ll_link *tmp = (struct ll_link*)malloc(sizeof(struct ll_link));
+	if(tmp == 0){return 0;}
 	tmp->data=dat;
 	tmp->nxt=nxt;
 	return tmp;
