@@ -1,5 +1,4 @@
 #include "ll.h"
-#include<stdio.h>
 #include<stdlib.h>
 
 struct ll_link{
@@ -66,7 +65,6 @@ void ll_remlist(struct ll_link* root){
 	struct ll_link* tmp;
 	while(curr != 0){
 		tmp = curr->nxt;
-		printf("freeing %d", curr->data);
 		free(curr);
 		curr = tmp;
 	}
