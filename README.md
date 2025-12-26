@@ -1,2 +1,2 @@
-# c_linkedList
-linked list implementation in C
+# c_datastructs
+datastructures in c
