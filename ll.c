@@ -2,8 +2,8 @@
 #include<stdlib.h>
 
 struct ll_link{
-	int data;
-	struct ll_link *nxt;
+	struct ll_link *nxt; //8 bytes
+	int data; //4 bytes
 };
 struct ll_link* ll_newlink(int dat, struct ll_link* nxt){
 	struct ll_link *tmp = (struct ll_link*)malloc(sizeof(struct ll_link));
